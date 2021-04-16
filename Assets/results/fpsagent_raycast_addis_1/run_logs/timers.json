@@ -1,0 +1,96 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1615825024",
+        "python_version": "3.6.12 |Anaconda, Inc.| (default, Sep  9 2020, 00:29:25) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\projects\\anaconda3\\envs\\ml-agents\\Scripts\\mlagents-learn ./config/RaycastObservationEx.yaml --run-id=fpsagent_raycast_addis_1",
+        "mlagents_version": "0.17.0",
+        "mlagents_envs_version": "0.17.0",
+        "communication_protocol_version": "1.0.0",
+        "tensorflow_version": "2.4.0",
+        "end_time_seconds": "1615825116"
+    },
+    "total": 91.88358629999999,
+    "count": 1,
+    "self": 0.008555799999982128,
+    "children": {
+        "run_training.setup": {
+            "total": 0.022239599999999998,
+            "count": 1,
+            "self": 0.022239599999999998
+        },
+        "TrainerController.start_learning": {
+            "total": 91.8527909,
+            "count": 1,
+            "self": 1.3774820999999946,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 37.8228352,
+                    "count": 1,
+                    "self": 37.8228352
+                },
+                "TrainerController.advance": {
+                    "total": 52.3974743,
+                    "count": 1,
+                    "self": 1.1699999994618793e-05,
+                    "children": {
+                        "env_step": {
+                            "total": 52.397462600000004,
+                            "count": 1,
+                            "self": 52.397448000000004,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 1.4600000000086766e-05,
+                                    "count": 1,
+                                    "self": 1.4600000000086766e-05
+                                }
+                            }
+                        }
+                    }
+                },
+                "trainer_threads": {
+                    "total": 2.2200000003635978e-05,
+                    "count": 1,
+                    "self": 2.2200000003635978e-05,
+                    "children": {
+                        "thread_root": {
+                            "total": 0.0,
+                            "count": 0,
+                            "is_parallel": true,
+                            "self": 0.0,
+                            "children": {
+                                "trainer_advance": {
+                                    "total": 52.031961400000796,
+                                    "count": 26162,
+                                    "is_parallel": true,
+                                    "self": 0.6639798000002557,
+                                    "children": {
+                                        "process_trajectory": {
+                                            "total": 51.36798160000054,
+                                            "count": 26162,
+                                            "is_parallel": true,
+                                            "self": 51.36798160000054
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_model": {
+                    "total": 0.25497710000000495,
+                    "count": 1,
+                    "self": 0.000358300000002032,
+                    "children": {
+                        "Trainer.save_model": {
+                            "total": 0.2546188000000029,
+                            "count": 1,
+                            "self": 0.2546188000000029
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

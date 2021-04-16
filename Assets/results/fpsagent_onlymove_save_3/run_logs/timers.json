@@ -1,0 +1,41 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1614090182",
+        "python_version": "3.6.12 |Anaconda, Inc.| (default, Sep  9 2020, 00:29:25) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\projects\\anaconda3\\envs\\ml-agents\\Scripts\\mlagents-learn ./config/FPSAgent.yaml --run-id=fpsagent_onlymove_save_3",
+        "mlagents_version": "0.17.0",
+        "mlagents_envs_version": "0.17.0",
+        "communication_protocol_version": "1.0.0",
+        "tensorflow_version": "2.4.0",
+        "end_time_seconds": "1614090244"
+    },
+    "total": 62.1579567,
+    "count": 1,
+    "self": 0.23197489999999732,
+    "children": {
+        "run_training.setup": {
+            "total": 0.008040100000000001,
+            "count": 1,
+            "self": 0.008040100000000001
+        },
+        "TrainerController.start_learning": {
+            "total": 61.9179417,
+            "count": 1,
+            "self": 0.0001905000000022028,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 61.9174474,
+                    "count": 1,
+                    "self": 61.9174474
+                },
+                "TrainerController._save_model": {
+                    "total": 0.0003037999999975227,
+                    "count": 1,
+                    "self": 0.0003037999999975227
+                }
+            }
+        }
+    }
+}

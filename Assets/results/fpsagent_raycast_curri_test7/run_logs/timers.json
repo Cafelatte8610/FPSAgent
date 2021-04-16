@@ -1,0 +1,67 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1615491840",
+        "python_version": "3.6.12 |Anaconda, Inc.| (default, Sep  9 2020, 00:29:25) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\projects\\anaconda3\\envs\\ml-agents\\Scripts\\mlagents-learn ./config/FPSAgent_currient.yaml --run-id=fpsagent_raycast_curri_test7",
+        "mlagents_version": "0.17.0",
+        "mlagents_envs_version": "0.17.0",
+        "communication_protocol_version": "1.0.0",
+        "tensorflow_version": "2.4.0",
+        "end_time_seconds": "1615491909"
+    },
+    "total": 69.17822720000001,
+    "count": 1,
+    "self": 0.010237400000008279,
+    "children": {
+        "run_training.setup": {
+            "total": 0.0461456,
+            "count": 1,
+            "self": 0.0461456
+        },
+        "TrainerController.start_learning": {
+            "total": 69.1218442,
+            "count": 1,
+            "self": 1.382606999999993,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.3620678,
+                    "count": 1,
+                    "self": 7.3620678
+                },
+                "TrainerController.advance": {
+                    "total": 60.0026223,
+                    "count": 1,
+                    "self": 1.3399999993168876e-05,
+                    "children": {
+                        "env_step": {
+                            "total": 60.002608900000006,
+                            "count": 1,
+                            "self": 60.002599800000006,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 9.099999999762076e-06,
+                                    "count": 1,
+                                    "self": 9.099999999762076e-06
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_model": {
+                    "total": 0.3745471000000009,
+                    "count": 1,
+                    "self": 0.0003832000000016933,
+                    "children": {
+                        "Trainer.save_model": {
+                            "total": 0.3741638999999992,
+                            "count": 1,
+                            "self": 0.3741638999999992
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

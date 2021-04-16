@@ -1,0 +1,46 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1615534039",
+        "python_version": "3.6.12 |Anaconda, Inc.| (default, Sep  9 2020, 00:29:25) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\projects\\anaconda3\\envs\\ml-agents\\Scripts\\mlagents-learn ./config/RaycastObservationEx.yaml --run-id=fpsagent_raycast_3d_test_retest5",
+        "mlagents_version": "0.17.0",
+        "mlagents_envs_version": "0.17.0",
+        "communication_protocol_version": "1.0.0",
+        "tensorflow_version": "2.4.0",
+        "end_time_seconds": "1615534058"
+    },
+    "total": 19.7762884,
+    "count": 1,
+    "self": 0.251923399999999,
+    "children": {
+        "run_training.setup": {
+            "total": 0.0077639,
+            "count": 1,
+            "self": 0.0077639
+        },
+        "TrainerController.start_learning": {
+            "total": 19.5166011,
+            "count": 1,
+            "self": 0.0008487999999999829,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 19.5155418,
+                    "count": 1,
+                    "self": 19.5155418
+                },
+                "trainer_threads": {
+                    "total": 9.999999974752427e-07,
+                    "count": 1,
+                    "self": 9.999999974752427e-07
+                },
+                "TrainerController._save_model": {
+                    "total": 0.00020950000000041769,
+                    "count": 1,
+                    "self": 0.00020950000000041769
+                }
+            }
+        }
+    }
+}
